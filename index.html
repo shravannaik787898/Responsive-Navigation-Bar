@@ -1,0 +1,24 @@
+<style>
+    .navbar { display: flex; justify-content: space-between; background: #222; color: white; padding: 10px 20px; align-items: center; }
+    .nav-menu { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+    .nav-menu a { color: white; text-decoration: none; }
+    .dropdown { position: relative; }
+    .dropdown-content { display: none; position: absolute; background: #444; padding: 10px; top: 100%; left: 0; }
+    .dropdown:hover .dropdown-content { display: block; }
+</style>
+
+<nav class="navbar">
+    <h2>Sanctify</h2>
+    <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li class="dropdown">
+            <a href="#services">Services ▾</a>
+            <div class="dropdown-content">
+                <a href="#all" style="color:white; text-decoration:none;">All Services</a>
+            </div>
+        </li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</nav>
